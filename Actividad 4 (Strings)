@@ -1,0 +1,29 @@
+#CAMILO ROLDAN - ACTIVIDAD 4 (STRINGS)
+
+#Nivel 1: Operaciones basicas
+texto = "Programación para todos"
+print(texto)
+print(len(texto))
+#Nivel 2: Transformación de texto
+print(texto.upper())
+print(texto.lower())
+print(texto.title())
+print(texto.capitalize())
+#Nivel 3: Búsqueda y verificación
+print(texto.startswith("Python")) 
+print(texto.endswith("todos")) 
+print(texto.find("Para"))
+print("Python" in texto)
+#Nivel 4: Manipulación
+print(texto.replace("Programación", "Python"))
+print(texto.split())
+print(" - ".join(texto.split()))
+#Nivel 5: Índices
+print(texto[0])
+print(texto[-1])
+print(texto[5])
+#Nivel 6: Aplicación simple
+NombreCompleto = "Camilo Roldán"
+print("Hola mi nombre es {}".format(NombreCompleto))
+Acronimo = NombreCompleto[0] + NombreCompleto[7]
+print("Mi acrónimo es: {}".format(Acronimo))
