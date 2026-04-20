@@ -24,13 +24,13 @@ print("Costo estimado: " + costo)"""
 
 #Correcion:
 
-"""ancho = float(input("Ingrese el ancho del terreno: "))
+ancho = float(input("Ingrese el ancho del terreno: "))
 largo = float(input("Ingrese el largo del terreno: "))
 precio = float(input("Ingrese el precio por metro cuadrado: "))
 area = ancho * largo
 costo = area * precio
 print("Área total: ", str(area))
-print("Costo estimado: ", str(costo))"""""
+print("Costo estimado: ", str(costo))
 
 # a) ¿Cuáles eran los errores principales? Los errores principales eran que las variables estaban como strings. Además, cuando se hizo print del el área y el costo, se intentaba unir un string con un número. 
 # b) ¿Por qué tu corrección sí permite obtener resultados válidos? Porque el input se convirtió a números con float() para calculos, y se uso str() para convertir los resultados a strings al hacer print.
@@ -39,3 +39,18 @@ print("Costo estimado: ", str(costo))"""""
 TecnologíaParaTodos = "Tecnología para todos"
 print(TecnologíaParaTodos.upper())
 print(len(TecnologíaParaTodos))
+print("Python" in TecnologíaParaTodos)
+print(TecnologíaParaTodos.replace("Tecnología", "Python"))
+print(TecnologíaParaTodos.split())
+
+# ===== PARTE C =====
+#5. Desarrolla un programa
+Nombre, apellido, país, ancho, alto, metro = input("¿Cuál es tu nombre?"), input("¿Cuál es tu apellido?"), input("¿Cuál es tu país?"), float(input("¿Cuál es el ancho de tu terreno?")), float(input("¿Cuál es el alto de tu terreno?")), float(input("¿Cuál es el precio por metro cuadrado? "))
+area = ancho * alto
+costo = area * metro
+NombreCompleto = Nombre + " " + apellido
+print("Nombre: {}, Localizacion: {}. El area total es {} m² y el costo estimado es ${}".format(NombreCompleto, país, area, costo))
+print(NombreCompleto.upper())
+print(len(NombreCompleto))
+print("a" in NombreCompleto)
+print(costo > 100)
